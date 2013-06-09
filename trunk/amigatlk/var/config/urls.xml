@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urls xmlns="http://jelix.org/ns/urls/1.0">
+    <entrypoint type="classic" name="index" default="true" noentrypoint="true">
+        <url pathinfo="/" module="amigatlk" action="default:index">
+        </url>
+
+        <url pathinfo="/:lang/"
+            module="amigatlk" action="default:index">
+            <param name="lang" regexp="fr|en" />
+       </url>
+
+        <url pathinfo="/:lang/games/:name"
+            module="amigatlk" action="games:view" >
+            <param name="lang" regexp="en|fr" />
+            <param name="name" type="string" escape="false" />
+        </url>
+
+    </entrypoint>
+</urls>
