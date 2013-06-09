@@ -1,0 +1,164 @@
+
+#destroyexplorer {
+	width: 630px;
+	margin: 0 auto 0 auto;
+}
+#destroyexplorer a, #destroyexplorer a:hover {
+	color #00f;
+}
+
+.cache {
+	display: none;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+	font-family: verdana, sans-serif;
+	font-size: x-small;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	font-size: small;
+	background-image: url("/gfx/fond-principal.png");
+	background-repeat: repeat-x;
+	background-color: #000;
+	color: #ff0;
+
+}
+hr.clear {
+	clear: both;
+	visibility: hidden;
+}
+
+img {
+	border: 0;
+}
+
+:link {
+	color: #fc5;
+	background: transparent;
+	text-decoration: underline;
+}
+:visited {
+	color: #fa3;
+	background: transparent;
+}
+:link:hover, :visited:hover {
+	color: #fe7;
+	background: transparent;
+	text-decoration: none; 
+}
+
+
+#page {
+	width: 100%;
+	text-align: center;
+}
+
+#cadre {
+	width: 800px;
+	margin: 0 auto 0 auto;
+	text-align: center;
+}
+
+#menu ul {
+
+}
+#menu li {
+	list-style: none;
+	margin: 0 0 0 0;
+	display: block;
+	display: inline;
+	font-size: 130%;
+	border-right: 1px solid #aa0;
+}
+#menu li aa {
+	color: #dd0;
+	background-color: transparent;
+}
+#menu a,  #menu a:link, #menu a:visited  {
+	background-color: transparent;
+	color: white;
+	padding: 0 4px 0 4px;
+	text-decoration: none; 
+}
+#menu a:hover,  #menu a:focus {
+	 background-color: #9cd4f7;
+	 color: black;
+	 text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#contenu {
+	margin: 0 auto 0 auto;
+	text-align: center;
+	width: 800px;
+}
+
+#bloc {
+
+}
+
+ .haut-gauche {
+	float: left;
+	width: 12px;
+	clear: left;
+}
+ .haut-droite {
+	float: left;
+	clear: right;
+	width: 12px;
+}
+ .milieu {
+	width: 768px;
+	float: left;
+	background-image: url("/gfx/fond-contenu.png");
+	background-repeat: repeat-x;
+	padding: 6px 4px 6px 4px;
+	color: #ee0;
+	background-color: transparent;
+	text-align: left;
+	
+}
+.milieu a {
+	color: inherit;
+}
+
+#contenu .gauche {
+	float: left;
+	clear: both;
+	margin: 0 4px 0 0;
+}
+#contenu .texte {
+}
+#contenu .icone {
+	display: inline;
+	vertical-align: middle;
+}
+
+#boutons {
+	margin: 0 0 0 0;
+	padding: 3px 0 0 0;
+	border-top: 1px solid #1785aa;
+}
+#boutons img {
+	width: 88px;
+	height: 31px;
+	margin: 0 0 0 0;
+}
+
