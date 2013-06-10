@@ -5,9 +5,9 @@
 * @author     Bruno Ethvignot <bruno at tlk dot biz> 
 * @copyright  TLK Games
 * @created    2013-06-09
-* @date       2013-06-09
+* @date       2013-06-10
 * @link       http://amiga.tlk.fr/
-* @license    All rights reserved
+* @license    GNU GPL v3
 */
 
 class articlesCtrl extends jController {
@@ -30,7 +30,9 @@ class articlesCtrl extends jController {
             return $rep;
         }
         $rep->title = $article->title;
-        $rep->body->assignZone('MAIN', 'amigatlk~viewArticle', array('article' => $article));
+        $rep->body->assignZone('MAIN',
+            'amigatlk~viewArticle',
+            array('article' => $article));
         return $rep;
     }
 }
