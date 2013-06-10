@@ -15,5 +15,11 @@
             <param name="name" type="string" escape="false" />
         </url>
 
+        <url pathinfo="/:lang/articles/:name"
+            module="amigatlk" action="articles:view" >
+            <param name="lang" regexp="en|fr" />
+            <param name="name" type="string" escape="false" />
+        </url>
+
     </entrypoint>
 </urls>
