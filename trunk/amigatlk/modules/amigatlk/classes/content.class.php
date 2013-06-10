@@ -5,12 +5,10 @@
 * @author     Bruno Ethvignot <bruno at tlk dot biz> 
 * @copyright  TLK Games
 * @created    2013-04-21
-* @date       2013-04-21
+* @date       2013-06-10
 * @link       http://amiga.tlk.fr/
 * @license    All rights reserved
 */
-
-
 
 class content {
 
@@ -20,10 +18,16 @@ class content {
 
     public function getContent($name) {
 
-        $tpl = new jTpl();
+        $tpl      = new jTpl();
         $tpl->assign( 'lang', jLocale::getCurrentLang() );
         $name          = str_replace('-', '_', $name);
-        $content       = $tpl->fetch('amigatlk~' . $name, 'text', true, false);
+        $tplName       = 'amigatlk~' . $name;
+        try {
+            $content       = $tpl->fetch($tplName, 'text', true, false);
+        } catch(Exception $e) {
+            jLog::log("fetch() return: " . $e->getMessage() ); 
+            return;
+        }
         $lines         = explode("\n", $content);
         $item          = new stdClass();
         $item->title   = trim  (array_shift($lines));
