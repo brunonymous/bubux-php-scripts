@@ -1,0 +1,8 @@
+User-agent: msnbot 
+Disallow: /
+User-agent: yahoo-newscrawler
+Disallow: /
+User-agent: Yahoo! Slurp
+Disallow: /
+User-agent: MSIECrawler
+Disallow: /
